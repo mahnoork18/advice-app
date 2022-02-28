@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+
+--Grayish-Blue: hsl(215, 13%, 18%);
+--Dark-Grayish-Blue: hsl(219, 18%, 22%);
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: var(--Dark-Grayish-Blue);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.wrapper{
+    background: var(--Grayish-Blue);
+    width: 100%;
+    max-width: 30.33rem;
+    padding: 1rem;
+height: 300px;
+border-radius: 20px;
+overflow: hidden;
+margin-bottom: 3em;
+
+}
+#id{
+    font-size: 12px;
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    font-weight: 800;
+    margin-top: 1em;
+
+}
+.container{
+    max-width:80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 1.6;
+}
+#advice{
+    width: 100%;
+    margin-top: 1.6em;
+    font-size: 1.2rem;
+    color: var(--Light-Cyan);
+
+}
+.divider{
+    max-width: 200px;
+    margin-top: 6em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:7em;
+}
+.icon-d{
+    margin-top:4px;
+    font-size: 20rem;
+}
+#cta{
+    background: var(--Neon-Green);
+    margin-top: 3em;
+    padding: 1rem 1rem;
+  position: absolute;
+  top:58%;
+  left: 48%;
+    border: 1px solid var(--Neon-Green);
+    margin-top: 2em;
+transition: all ease 0.2s ;
+cursor: pointer;
+    border-radius: 50%;
+}
+#cta:hover{
+    box-shadow: -1px 5px 58px 13px rgba(19,255,186,0.55);
+    -webkit-box-shadow: -1px 5px 58px 13px rgba(19,255,186,0.55);
+    -moz-box-shadow: -1px 5px 58px 13px rgba(19,255,186,0.55);}
+
+   @media(max-width:400px){
+       .wrapper{
+           height: 265px;
+           width: 80%;
+        
+
+       }
+       #cta{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: -80px;
+        margin-bottom: 2em;
+       }
+       .divider{
+           margin-top: 6em;
+       }
+       .advice{
+           font-size:0.9rem;
+       }
+   }
